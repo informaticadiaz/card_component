@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+        body{
+            background-color: hsl(30, 38%, 92%);
+        }
+        .wrapper {
+        width: 60%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;        
+        margin-top: 50px;
+        }
+        .one {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background:url(/images/image-product-desktop.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 0 0 15px;
+        }
+        .two {
+
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 15px 15px 0;
+        }
+        .two h5 {
+            padding: 0 4vh 0 4vh;
+            text-align: left;
+            color: gray;
+            font-size: 2vw;
+        }
+        .two h2 {
+            padding: 0 4vh 0 4vh;
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 4vw;
+            
+        }
+        .two p {
+            font-size: 2vh;
+            color: gray;
+            margin: 0 10% 10% 10%;
+            text-align: justify;
+        }
+        .two span{
+            margin: 0 0 0 10%;
+            color: hsl(158, 36%, 37%);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 3vw;
+
+        }
+        .two .discount{
+            vertical-align: 0.5vh;
+            text-decoration: line-through;
+            color: grey;
+            font-size: 2vw;
+        }
+        .two button {
+        background-color: hsl(158, 36%, 37%);
+        margin: 5% 0 10% 10%;
+        width: 80%;
+        height: 5vh;
+        border: none;
+        color: white;        
+        font-size: 2vw;
+        border-radius: 10px;
+        }
+        .button:hover {
+            background-color: hsl(158, 77%, 14%);
+        }
+        @media (max-width: 335px){
+            .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        }
+        .one{
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            background:url(/images/image-product-mobile.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .two{
+            width: 100%;
+        }
+        .two span{
+            color: gray;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="one">
+        </div>
+        
+        <div class="two">
+            <h5>PERFUME</h5>
+            <h2>Gabrielle <br>
+                Essence Eau De
+                Parfum</h2>
+            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.</p>
+            <span>$149.99</span> <span class="discount"> $169.99</span>
+            <button class="button">Add to Cart</button>
+        </div>
+
+    </div>   
+</body>
+</html>
