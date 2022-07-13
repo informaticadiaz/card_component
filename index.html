@@ -17,18 +17,15 @@
         grid-template-columns: 1fr 1fr;        
         margin-top: 50px;
         }
-        .one {
+        .wrapper .one {
+        background-image: url("images/image-product-desktop.jpg");
         margin: 0;
         padding: 0;
-        width: 100%;
-        background:url(/images/image-product-desktop.jpg);
         background-size: cover;
         background-position: center;
         border-radius: 15px 0 0 15px;
         }
-        .two {
-
-        width: 100%;
+        .wrapper .two {
         background-color: hsl(0, 0%, 100%);
         border-radius: 0 15px 15px 0;
         }
@@ -78,26 +75,7 @@
         .button:hover {
             background-color: hsl(158, 77%, 14%);
         }
-        @media (max-width: 335px){
-            .wrapper{
-        display: grid;
-        grid-template-columns: 1fr;
-        }
-        .one{
-            width: 100%;
-            border-radius: 15px 15px 0 0;
-            background:url(/images/image-product-mobile.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-        .two{
-            width: 100%;
-        }
-        .two span{
-            color: gray;
-        }
-    }
-            @media (max-width: 335px) {
+        @media (max-width: 335px) {
 
         .wrapper {
         display: grid;
