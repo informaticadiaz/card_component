@@ -97,6 +97,26 @@
             color: gray;
         }
     }
+            @media (max-width: 335px) {
+
+        .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        }
+        .wrapper .one {
+        background-image: url("images/image-product-desktop.jpg");
+        margin: 0;
+        padding: 0;      
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        }
+        .wrapper .two {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 0 15px 15px;
+        }
+    }
     </style>
 </head>
 <body>
