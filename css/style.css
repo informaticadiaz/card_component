@@ -1,0 +1,119 @@
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+        body{
+            background-color: hsl(30, 38%, 92%);
+        }
+        .wrapper {
+        width: 80%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;        
+        margin-top: 50px;
+        }
+        .wrapper .one {
+        background-image: url("../images/image-product-desktop.jpg");
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 0 0 15px;
+        }
+        .wrapper .two {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 15px 15px 0;
+        }
+        .two h5 {
+            padding: 0 4vh 0 4vh;
+            text-align: left;
+            color: gray;
+            font-size: 2vw;
+        }
+        .two h2 {
+            padding: 0 4vh 0 4vh;
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 3vw;
+            
+        }
+        .two p {
+            font-size: 2vw;
+            color: gray;
+            margin: 0 10% 10% 10%;
+            text-align: justify;
+        }
+        .two span{
+            color: hsl(158, 36%, 37%);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 3vw;
+            
+
+        }
+        .two .discount{
+            
+            text-decoration: line-through;
+            color: grey;
+            font-size: 2vw;
+            float: right;
+            margin-right: 25%;
+        }
+        .two button {
+        background-color: hsl(158, 36%, 37%);
+        margin: 5% 0 10% 10%;
+        width: 80%;
+        height: 5vw;
+        min-height: 30px;
+        border: none;
+        color: white;        
+        font-size: 3vw;
+        border-radius: 10px;
+        }
+        .button:hover {
+            background-color: hsl(158, 77%, 14%);
+             cursor: pointer;
+        }
+        .two .cart{
+            padding-right: 1vw;
+            width: 2vw;
+        }
+        @media (max-width: 335px) {
+
+        .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        }
+        .wrapper .one {
+        background-image: url("../images/image-product-desktop.jpg");
+        margin: 0;
+        padding: 0;      
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        }
+        .wrapper .two {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0 0 15px 15px;
+        }
+        .two h5 {
+        font-size: 3vw;
+        }
+        .two h2 {
+        font-size: 4vw;
+            
+        }
+        .two p {
+        font-size: 3vw;
+        }
+        .two span{
+        font-size: 4vw;
+        }
+        .two .discount{
+        font-size: 3vw;
+        }
+        .two button {      
+        font-size: 4vw;
+        }    
+        .two .cart{
+        width: 3vw;
+        }
+    }
